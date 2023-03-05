@@ -11,6 +11,13 @@ class Joke extends Component {
           <i className="fas fa-arrow-down" onClick={this.props.downvote} />
         </div>
         <div className="Joke-text">{this.props.text}</div>
+        <div className="Joke-smiley">
+          <i
+            class="em em-rolling_on_the_floor_laughing"
+            aria-role="presentation"
+            aria-label="ROLLING ON THE FLOOR LAUGHING"
+          ></i>
+        </div>
       </div>
     );
   }
