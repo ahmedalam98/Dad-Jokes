@@ -21,7 +21,6 @@ class Joke extends Component {
   }
 
   getEmoji() {
-    // emojis from https://emoji-css.afeld.me/ library
     if (this.props.votes >= 15) {
       return "em em-rolling_on_the_floor_laughing";
     } else if (this.props.votes >= 12) {
