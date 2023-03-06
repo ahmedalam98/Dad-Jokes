@@ -15,12 +15,14 @@ class JokeList extends Component {
       jokes: JSON.parse(window.localStorage.getItem("jokes") || "[]"),
       loading: false,
     };
-    this.seenJokes = new Set(this.state.jokes.map((j) => j.text));
     this.handleClick = this.handleClick.bind(this);
-    this.handleClear = this.handleClick.bind(this);
+
+    // Unique Jokes
+    this.seenJokes = new Set(this.state.jokes.map((j) => j.text));
   }
 
   componentDidMount() {
+    // check if jokes parsed from localStorage first before getting new jokes
     if (this.state.jokes.length === 0) this.getJokes();
   }
 
