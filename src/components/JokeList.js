@@ -96,6 +96,13 @@ class JokeList extends Component {
           <button className="JokeList-getmore" onClick={this.handleClick}>
             Fetch Jokes
           </button>
+          <p className="copyright">
+            © Created by :
+            <a href="https://github.com/ahmedalam98" className="author">
+              {" "}
+              Ahmed Alam El-Deen
+            </a>
+          </p>
         </div>
         <div className="JokeList-jokes">
           {this.state.jokes.map((j) => (

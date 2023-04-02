@@ -46,6 +46,7 @@
   align-self: center;
   width: 70%;
   overflow: scroll;
+  overflow-x: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -75,6 +76,21 @@
     rgba(240, 98, 146, 1) 100%
   );
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
+}
+
+.copyright,
+.author {
+  color: rgb(213, 213, 213);
+  font-size: 0.8rem;
+}
+
+.author {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.author:hover {
+  color: rgb(184, 184, 184);
 }
 
 .JokeList-getmore:hover {
